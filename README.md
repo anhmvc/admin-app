@@ -1,6 +1,15 @@
 # AdminApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2. This project was submitted to Google's internal hackathon gHacks24.
+
+## Contributors
+
+The following people have contributed to this application.
+
+- Anh Mac - Google, Full Stack Developer
+- Charlene Sirianni - Google, UI/UX Designer & Frontend Developer
+
+Special thanks to Googlers - Kristin Ho, Oscar Wahltinez who have also contributed to the hackathon project.
 
 ## Development server
 
