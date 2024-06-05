@@ -1,0 +1,31 @@
+<div class="dialog-container">
+  <h2 mat-dialog-title>Create entry</h2>
+  <mat-dialog-content>
+    <form #userlogin="ngForm" novalidate>
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input
+          matInput
+          placeholder="Insert title"
+          name="question"
+          [(ngModel)]="formData.question"
+        />
+      </mat-form-field>
+      <mat-form-field [style.height.px]="327">
+        <mat-label>Body</mat-label>
+        <input
+          matInput
+          placeholder="Insert body text"
+          name="answer"
+          [(ngModel)]="formData.answer"
+        />
+      </mat-form-field>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="onCancel()">Cancel</button>
+    <button mat-button mat-dialog-close cdkFocusInitial (click)="onSave()">
+      Save
+    </button>
+  </mat-dialog-actions>
+</div>

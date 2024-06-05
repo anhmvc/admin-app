@@ -1,0 +1,36 @@
+<card
+  class="group relative flex flex-col rounded-2xl bg-zinc-50 transition-shadow hover:shadow-md hover:shadow-zinc-900/5"
+>
+  <div class="pointer-events-none">
+    <div
+      class="absolute inset-0 rounded-2xl transition duration-300 [1ask-image:linear-gradient(white,transparent)] group-hover:opacity-50"
+    ></div>
+    <div
+      class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#CBDEF5] to-[#DFECFB] opacity-0 transition duration-300 group-hover:opacity-100"
+      style="mask-image: radial-gradient(180px at 0px 0px, white, transparent)"
+    >
+      <!-- Hover gradient backround -->
+    </div>
+    <div
+      class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
+      style="mask-image: radial-gradient(180px at 0px 0px, white, transparent)"
+    ></div>
+  </div>
+  <div
+    class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-zinc-900/7.5 group-hover:ring-zinc-900/10"
+  ></div>
+  <div class="relative rounded-2xl pb-6 pt-6 px-4">
+    <h3 class="text-xl text-zinc-900">
+      <a>{{ title }}</a>
+    </h3>
+    <p class="mt-1 text-sm text-zinc-600">{{ body }}</p>
+  </div>
+
+  <!-- <badges class="px-4 mb-4 -mt-3">
+        <span
+            class="bg-gray-200 text-gray-800 text-xs font-medium me-2 px-2 py-0.5 rounded">Published</span>
+        <span
+            class="bg-green-100 text-gray-800 text-xs font-medium me-2 px-2 py-0.5 rounded">
+            Updated</span>
+    </badges> -->
+</card>

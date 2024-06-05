@@ -1,0 +1,229 @@
+<div class="w-full">
+  <div class="h-full lg:ml-72 xl:ml-80">
+    <header
+      class="contents lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex"
+    >
+      <div
+        class="contents lg:pointer-events-auto lg:block lg:w-72 lg:overflow-y-auto lg:border-r lg:border-zinc-900/10 lg:px-6 lg:pb-8 lg:pt-4 xl:w-80"
+      >
+        <div class="hidden lg:flex">
+          <a aria-label="Home" href="/" class="font-bold text-blue-500"
+            >educate girls</a
+          >
+        </div>
+        <div
+          class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 px-4 transition sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80 backdrop-blur-sm lg:left-72 xl:left-80 bg-white/[var(--bg-opacity-light)]"
+          style="--bg-opacity-light: 0.5"
+        >
+          <div
+            class="absolute inset-x-0 top-full h-px transition bg-zinc-900/7.5"
+          ></div>
+          <div class="hidden lg:block lg:max-w-md lg:flex-auto">
+            <button
+              type="button"
+              class="hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 ui-not-focus-visible:outline-none lg:flex"
+            >
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+                class="h-5 w-5 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12.01 12a4.25 4.25 0 1 0-6.02-6 4.25 4.25 0 0 0 6.02 6Zm0 0 3.24 3.25"
+                ></path></svg
+              >Search the content<kbd class="ml-auto text-2xs text-zinc-400"
+                ><kbd class="font-sans">⌘</kbd
+                ><kbd class="font-sans">K</kbd></kbd
+              >
+            </button>
+          </div>
+          <div class="flex items-center gap-5 lg:hidden">
+            <a aria-label="Home" href="/" class="font-bold text-blue-500"
+              >educate girls</a
+            >
+          </div>
+          <div class="flex items-center gap-5">
+            <nav class="hidden md:block">
+              <ul role="list" class="flex items-center gap-8">
+                <li>
+                  <a
+                    class="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900"
+                    href="/"
+                    >Stats</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900"
+                    href="/"
+                    >Log out</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <nav class="hidden lg:mt-10 lg:block">
+          <h3 class="flex w-full justify-between mb-6">
+            <span class="font-bold">Sources </span>
+            <app-upload-dialog />
+          </h3>
+          <ul role="list">
+            <li
+              class="flex items-center my-6"
+              *ngFor="let filename of FILENAMES"
+            >
+              <input
+                checked
+                id="default-checkbox"
+                type="checkbox"
+                value=""
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="default-checkbox"
+                class="ms-2 text-sm font-medium text-gray-900"
+                >{{ filename }}</label
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="relative flex h-full flex-col px-4 pt-14 sm:px-6 lg:px-8">
+      <main class="flex-auto">
+        <article class="flex h-full flex-col pb-10 pt-12">
+          <div>
+            <div class="absolute inset-0 -z-10 mx-0 max-w-none overflow-hidden">
+              <div
+                class="absolute left-1/2 top-0 ml-[-38rem] h-[25rem] w-[81.25rem]"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-[#3670B4] to-[#75ACFF] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]"
+                >
+                  <!-- Gradient background -->
+                </div>
+                <svg
+                  viewBox="0 0 1113 440"
+                  aria-hidden="true"
+                  class="absolute left-1/2 top-0 ml-[-19rem] w-[69.5625rem] fill-white blur-[26px]"
+                >
+                  <path
+                    d="M.016 439.5s-9.5-300 434-300S882.516 20 882.516 20V0h230.004v439.5H.016Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h1>
+              <div class="text-6xl mb-4">Admin portal</div>
+            </h1>
+            <div class="flex justify-end -mt-3">
+              <button
+                type="button"
+                class="flex h-16 w-12 items-center justify-center group"
+              >
+                <div
+                  class="flex items-center justify-center flex h-12 w-12 rounded-full transition group-hover:bg-zinc-900/5"
+                >
+                  <span
+                    style="font-family: Google Symbols"
+                    class="text-2xl"
+                    aria-hidden="true"
+                    >table</span
+                  >
+                </div>
+              </button>
+            </div>
+            <badges>
+              <a
+                href="#"
+                class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-1 rounded"
+                >Reviewed</a
+              >
+              <a
+                href="#"
+                class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-1 rounded"
+                >Pending</a
+              >
+              <a
+                href="#"
+                class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-1 rounded"
+              >
+                Updated</a
+              >
+              <a
+                href="#"
+                class="bg-gray-200 text-gray-800 text-sm font-medium me-2 px-2.5 py-1 rounded"
+              >
+                Published</a
+              >
+              <a
+                href="#"
+                class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-1 rounded"
+                >Warning</a
+              >
+            </badges>
+            <div class="mt-8 mb-10 xl:max-w-none">
+              <div>
+                <div class="grid grid-cols-2 xl:grid-cols-4 gap-4">
+                  <!-- <div class="columns-2 xl:columns-4 gap-4"> -->
+                  <column class="grid gap-4 content-start">
+                    <app-content-card
+                      *ngFor="let data of DATA | slice : 0 : 9"
+                      [title]="data.question"
+                      [body]="data.answer"
+                    />
+                  </column>
+                  <column class="grid gap-4 content-start">
+                    <app-content-card
+                      *ngFor="let data of DATA | slice : 9 : 19"
+                      [title]="data.question"
+                      [body]="data.answer"
+                    />
+                  </column>
+                  <column class="grid gap-4 content-start">
+                    <app-content-card
+                      *ngFor="let data of DATA | slice : 19 : 28"
+                      [title]="data.question"
+                      [body]="data.answer"
+                    />
+                  </column>
+                  <column class="grid gap-4 content-start">
+                    <app-content-card
+                      *ngFor="let data of DATA | slice : 28 : 36"
+                      [title]="data.question"
+                      [body]="data.answer"
+                    />
+                  </column>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center mb-16">
+            <div class="flex gap-3">
+              <a
+                class="flex w-full gap-1 justify-center items-center overflow-hidden text-md font-medium transition rounded-full bg-zinc-900 py-2 px-6 text-white hover:bg-zinc-700"
+                href="#"
+              >
+                Load more
+              </a>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer class="mx-auto w-full max-w-2xl space-y-10 pb-16 lg:max-w-5xl">
+        <div
+          class="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 sm:flex-row"
+        >
+          <p class="text-xs text-zinc-600">
+            An internal hackathon project. Styling borrowed from
+            https://tailwindui.com/templates/protocol.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>

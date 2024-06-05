@@ -1,0 +1,12 @@
+/* button {
+  margin-right: 8px;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-container {
+  width: 500px;
+}
